@@ -1,0 +1,344 @@
+/* header */
+
+body {
+    background-color: antiquewhite;
+}
+
+.logo {
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(236, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    width: 40%;
+}
+
+.list {
+    display: flex;
+    justify-content: space-evenly;
+}
+.list li {
+    list-style-type: none;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: black;
+    font-size:large;
+    font-weight: 500;
+}
+
+.nav-links:hover {
+    text-decoration: underline;
+    color: antiquewhite;
+}
+
+/* hero */
+.container {
+    margin-top: 30px;
+    width: 100%; 
+    height: 400px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.Image-box {
+    width: 80%;
+    height: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+}
+
+.Image {
+    width: 500px;
+    height: 380px;
+}
+
+.h1 {
+    width: 50%;
+    justify-content: center;
+
+}
+
+.descrip {
+    margin-top: 20px;
+}
+
+.color {
+    color: rgb(236, 26, 26);
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(247, 42, 42);
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(211, 15, 15);
+}
+
+/* courses page */
+
+.main {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.para {
+    margin-top: 20px;
+}
+
+.container1 {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+.container2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.box-container {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(236, 26, 26);
+    border: 2px solid rgb(148, 9, 9);
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    color:antiquewhite;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(0.95); 
+}
+
+.img {
+    border-radius: 10px;
+    padding-top: 2px;
+}
+.sec1 {
+    font-size: 80px;
+    padding-top: 20px;
+}
+.head1 {
+    padding-bottom: 10px;
+    font-weight:400;
+}
+
+/* apply page */
+
+.apply-main {
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  
+}
+
+.apply-h1 {
+    font-size: 30pt;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    padding-top: 10px;
+    color: rgb(211, 15, 15)
+}
+
+.apply-h2 {
+    font-family: Century Gothic;
+    padding-top: 20px;
+}
+
+
+.P-I {
+    text-align:"left";
+    color: white; 
+    background-color:#082d83; 
+    font-size: 20pt; 
+    font-family: Century Gothic;
+}
+
+.C-S {
+  
+    color: white;
+    background-color: #082d83;
+    font-size: 20pt;
+    font-family: Century Gothic;
+}
+
+.tr {
+      
+        font-family: Century Gothic;
+        font-size: 12pt;
+        background-color: rgb(236, 26, 26);     
+}
+
+.form-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+}
+
+.apply-btn {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    background-color: #0b3aaa;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+
+.apply-btn:hover {
+    background-color: #001648;
+}
+
+
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(236, 26, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+}
+
+
+
+
+
+
+/* media queury */
+@media screen and (min-width:100px) and (max-width:750px){
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.links {
+    width: 100%;
+}
+
+.nav-links {
+    font-size: 10x;
+}
+
+
+.Image {
+    width: 280px;
+    height: 200px;
+}
+
+.Image-box {
+    width: 100%;
+    flex-direction: column;
+}
+
+.h1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+
+.descrip {
+    margin-top: 15px;
+    padding-left: 15px;
+}
+
+.container2 {
+    width: 80%;  
+}
+
+.title {
+    font-size: 30px;
+    padding-top: 60px;
+}
+
+
+.main {
+     height: 100%;
+}
+
+.app-img {
+    width: 350px;
+    height: 120px;
+}
+
+.form-cont {
+ 
+    height: 800px;
+    width: 600px;
+}
+
+
+.footer {
+    font-size: 12px;
+}
+
+.apply-main {
+ padding: 10px;
+text-align: center;
+    }
+  
+  }
